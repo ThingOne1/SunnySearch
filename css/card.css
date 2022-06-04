@@ -1,0 +1,93 @@
+.cards {
+  display: flex;
+  gap: 20px;
+
+  justify-content: center;
+}
+
+.card {
+  --color-primary: #415c47;
+  --color-secondary: gray;
+
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 12px;
+  overflow: hidden;
+  
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.card header {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+
+.card.color--primary header {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.card .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  flex: 1;
+}
+
+.card .price {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  
+  background-color: #cfcfcf;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.caracteristics {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.caracteristics li {
+  width: 100%;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.caracteristics p {
+  text-align: center;
+}
+
+.card footer {
+  width: 100%;
+}
+
+.card .comprar {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 0;
+  transition: 0.3s ease;
+
+  text-align: center;
+}
+.card .comprar:hover {
+background-color: #6D8B74 ;
+
+}

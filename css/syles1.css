@@ -1,0 +1,135 @@
+.bg-novo{
+  background-color: #5F7161;
+}
+.bg-novo1{
+  background-color: #6D8B74;
+}
+.bg-novo2{
+  background-color: #EFEAD8;
+}
+#Botao{
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+#Title1{
+  font-family: 'Happy Monkey', cursive;
+  color: #D9CAB3;
+}
+#Title2{
+  color: #6D8B74;
+}
+.Title1{
+  font-family: 'Happy Monkey', cursive;
+  color: #D9CAB3;
+}
+.text-size1{
+  font-family: 'Happy Monkey', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.formulario{
+  border-radius: 30px;
+}
+@media (min-width: 1028px){
+  .wrapper{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2%;
+    margin: auto auto auto -2%;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 2;
+    font-size: 150%;
+    weight: 700;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+}
+@media (max-width: 1028px) {
+  .wrapper{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2%;
+    margin: auto auto auto -8%;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 2;
+    font-size: 60%;
+    weight: 700;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+.static-txt{
+  animation-name: CVWEBSITE;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.wrapper .static.txt{
+  color: #eee;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+  overflow: hidden;
+  height: 90px;
+  line-height: 90px;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #eee;
+  font-weight: 500;
+  font-size: 105%;
+  position: relative;
+  top: 0;
+  animation: slide 16s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+}
+@media (min-width: 1028px){
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #6D8B74;
+  border-left: 2px solid #53B8BB;
+  animation: typing 4s steps(40) infinite;
+}
+}
+@media (max-width: 1028px) {
+  .dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #6D8B74;
+  border-left: 2px solid #53B8BB;
+  animation: typing 4s steps(20) infinite;
+}
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 2px);
+  }
+  100%{
+    left: 0;
+  }
+}
